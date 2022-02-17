@@ -11,7 +11,7 @@ The output HTML file will show up in the same directory.
 ## Updates
 If updates are available, pull the updated docker file using
 ```bash
-docker pull danielfett/markdown2rfc
+docker pull upnic/makerfc
 ```
 
 ## Shell Shortcut
