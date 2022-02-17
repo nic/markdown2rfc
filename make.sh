@@ -19,6 +19,6 @@ FILENAME=`grep -m1 value "$1" | cut -d'"' -f2`
 
 mmark "$1" > "$OUTDIR"/"$FILENAME".xml
 
-`which xml2rfc` -p "$OUTDIR" --html "$OUTDIR"/"$FILENAME".xml
+`which xml2rfc` -p "$OUTDIR" --utf8 --html "$OUTDIR"/"$FILENAME".xml
 
 exit 0
