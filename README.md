@@ -17,5 +17,5 @@ docker pull upnic/makerfc
 ## Shell Shortcut
 Hint: Add the following line to your .bashrc to run this command with the alias `makerfc`:
 ```bash
-alias makerfc='docker run -v `pwd`:/data danielfett/markdown2rfc'
+alias makerfc='docker run -v `pwd`:/data upnic/makerfc'
 ```
