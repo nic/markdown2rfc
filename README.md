@@ -4,7 +4,7 @@ Docker file for converting internet drafts in markdown to HTML.
 ## Compiling
 To compile markdown to HTML and Text, run the following command from the directory containing the markdown file:
 ```bash
-docker run -v `pwd`:/data danielfett/markdown2rfc markdownfile.md
+docker run -v `pwd`:/data upnic/makerfc markdownfile.md
 ```
 The output HTML file will show up in the same directory.
 
