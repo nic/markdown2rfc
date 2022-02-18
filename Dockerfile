@@ -1,8 +1,10 @@
 FROM python:3-slim-buster
 
 RUN apt-get update && apt-get install -y wget
-RUN pip install 'xml2rfc'
+
 #RUN pip install 'xml2rfc==2.40.1'
+RUN pip install 'xml2rfc'
+
 
 WORKDIR /usr/local/bin
 
