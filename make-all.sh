@@ -52,7 +52,7 @@ while read repository fileglobs; do
                 echo "> making $file"
                 errorfile="$errordir"/$(basename -- "$file").txt
                 rm "$errordir" 2> /dev/null || true
-                docker run -v "$gitdir":/input -v "$htmloutputdir":/output danielfett/markdown2rfc /input/$(basename "$file") /output 2> "$errorfile" || echo "> error processing $file, see $errorfile"
+                docker run -v "$gitdir":/input -v "$htmloutputdir":/output upnic/makerfc /input/$(basename "$file") /output 2> "$errorfile" || echo "> error processing $file, see $errorfile"
             done
             fi
         done
